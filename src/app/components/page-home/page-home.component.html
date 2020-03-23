@@ -1,0 +1,20 @@
+<h1>Welcome</h1>
+<h2>in the Card Game Club</h2>
+<p>Here is your brand new deck of cards. Draw some cards or reshuffle it.</p>
+<a (click)="reshuffle()" class="light-green darken-3 waves-effect waves-light btn"><i class="material-icons left">favorite</i>Reshuffle</a>
+<div class="container deck">
+    <div class="card" (click)="drawCard()">
+        <a class="btn-floating light-green accent-1">{{numberOfCards}}</a>
+        <div class="card-image">
+            <img src="http://www.chrisdoughmandesign.com/_misc/change-cardback.png">
+        </div>
+    </div>
+</div>
+
+<div class="container myCards">
+    <div class="card" *ngFor="let card of myCards">
+        <div class="card-image">
+            <img src="{{card.image}}">
+        </div>
+    </div>
+</div>

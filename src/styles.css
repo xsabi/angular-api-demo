@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+.card {
+    width: 100px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.myCards {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.btn-floating {
+    color: black;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    opacity: 0.7;
+}
+.deck {
+    text-align: center;
+    padding: 20px 0;
+}
